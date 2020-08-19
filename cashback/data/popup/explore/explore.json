@@ -1,0 +1,11 @@
+[
+  {"id": "zip-reader", "title": "ZIP Reader"},
+  {"id": "block-site", "title": "Block Site"},
+  {"id": "custom-dark-mode", "title": "Custom Dark Mode"},
+  {"id": "hide-tabs", "title": "Hide Tabs (Panic Button)"},
+  {"id": "block-image-video", "title": "Block Image|Video"},
+  {"id": "flash-blocker-strict", "title": "Flash Blocker Strict"},
+  {"id": "html-content-blocker", "title": "HTML Content Blocker"},
+  {"id": "host-blocker", "title": "Host AdBlocker - Block By Domain"},
+  {"id": "access-control-allow-origin", "title": "Allow CORS: Access-Control-Allow-Origin"}
+]

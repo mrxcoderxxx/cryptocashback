@@ -1,0 +1,425 @@
+#lz_popup {
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 30px;
+    position: fixed;
+    top: 110px;
+    right: 30px;
+    z-index: 99999;
+    width: 350px;
+    border-radius: 4px;
+    padding: 0px;
+}
+
+#lz_window {
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 30px;
+    position: fixed;
+    top: 110px;
+    right: 30px;
+    z-index: 99999;
+    width: 450px;
+    border-radius: 4px;
+    padding: 0px;
+    top: 33%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -270px;
+}
+
+#lz_window a {
+    color: #12bfac;
+}
+
+.xoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.lz-move {
+    color: rgb(185, 185, 185);
+    top: 6px;
+    font-size: 14px;
+    padding: 8px 5px;
+    float: right;
+}
+
+.lz-close {
+    color: rgb(185, 185, 185);
+    top: 6px;
+    font-size: 16px!important;
+    padding: 7px 10px;
+    float: right;
+    margin-right: 5px;
+}
+
+#lz-logo {
+    padding: 10px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+#lz-logo img {
+    margin-top: 5px;
+}
+
+.lz-move:hover {
+    cursor: pointer;
+    color: rgb(80, 80, 80);
+}
+
+.lz-close:hover {
+    cursor: pointer;
+    color: rgb(80, 80, 80);
+}
+
+#lz_button {
+    padding: 0px 25px;
+}
+
+#lz_button button {
+    background: #12bfac;
+    color: white;
+}
+
+#lz_profile_selected {
+    padding-right: 20px;
+    font-size: 14px;
+    border-top: 1px solid rgb(217, 217, 217);
+    margin-left: 5px;
+    color: #888;
+    height: 25px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 5px!important;
+    height: 32px;
+}
+
+#lz_profile_selected p {
+    font-size: 13px;
+}
+
+#lz_content {
+    padding: 15px;
+    overflow: auto;
+    max-height: 375px;
+    min-height: 150px;
+}
+
+#lz_content p {
+    font-size: 15px;
+}
+
+#lz_content_notify {
+    padding: 15px;
+    overflow: auto;
+    max-height: 375px;
+    min-height: 150px;
+}
+
+#lz_content_notify p {
+    font-size: 15px;
+}
+
+.lz_checkbox_container {
+    width: 70px;
+    float: right;
+    cursor: pointer;
+    display: block;
+    padding: 5px;
+    margin: -15px 17px 5px 0px;
+    border-radius: 3px;
+    transition: all 0.1s ease-in;
+}
+
+.lz_checkbox_container img {
+    vertical-align: middle;
+}
+
+.x-check {
+    color: rgb(221, 221, 221);
+    font-size: 22px!important;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.fa-check-square {
+    color: #12bfac!important;
+}
+
+.x-check:hover {
+    color: #12bfac;
+    font-size: 21px;
+}
+
+#btn-signin,
+#btn-process {
+    display: none;
+}
+
+.lz-title {
+    font-size: 14px;
+}
+
+.lz-name {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(217, 217, 217);
+    padding: 10px 0;
+}
+
+.remove-record {
+    vertical-align: middle;
+}
+
+.p-remove {
+    color: black!important;
+    text-decoration: none!important;
+    font-size: 11px;
+}
+
+
+/* Absolute Center Spinner */
+
+.loading-lz {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+}
+
+
+/* Transparent Overlay */
+
+.loading-lz:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* :not(:required) hides these rules from IE9 and below */
+
+.loading-lz:not(:required) {
+    /* hide "loading-lz..." text */
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.loading-lz:not(:required):after {
+    content: '';
+    display: block;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    margin-top: -0.5em;
+    -webkit-animation: spinner 1500ms infinite linear;
+    -moz-animation: spinner 1500ms infinite linear;
+    -ms-animation: spinner 1500ms infinite linear;
+    -o-animation: spinner 1500ms infinite linear;
+    animation: spinner 1500ms infinite linear;
+    border-radius: 0.5em;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+    box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
+
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.media-body {
+    display: table-cell;
+    width: 10000px;
+    vertical-align: top;
+}
+
+.pull-left {
+    padding-right: 10px;
+}
+
+.media {
+    overflow: hidden;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    padding: 6px 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 4px;
+}
+
+button {
+    background: 0 0;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.lz_selectall_container {
+    cursor: pointer;
+    padding-right: 25px;
+    float: right;
+}
+
+#selectall {
+    padding-right: 10px;
+}
+
+.s-check {
+    color: rgb(221, 221, 221);
+    font-size: 22px!important;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.s-check:hover {
+    color: #12bfac;
+    font-size: 21px;
+}
+
+#btn-profile {
+    display: inline-block;
+    vertical-align: middle;
+    color: #12bfac;
+    font-weight: 700;
+    font-size: 17px;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #12bfac;
+    border-image: initial;
+    border-radius: 3px;
+    padding: 0px 13px;
+    margin: 0px 5px 0px 8px;
+}
+
+#btn-profile:hover {
+    background-color: #12bfac;
+    color: #fff;
+}

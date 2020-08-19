@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head><meta charset="utf-8"></head>
+    <title>Popup Blocker (Lite)</title>
+    <link rel="stylesheet" type="text/css" href="options.css">
+  </head>
+  <body>
+    <div class="separate"><label>a. Time delay to close the popup is <input type="number" id="delay" min=0 max=30000></input> millisec (default is 10ms, and max is 30000ms).</label></div>
+    <div class="separate"><label>b. When I use mouse middle or right click, do NOT close popup(s) <input type="checkbox" id="middle"></input> (default is active)</label></div>
+    <div class="separate"><label>c. Force close a popup if the opener tab is closed (strict blocker) <input type="checkbox" id="closedopener"></input></label></div>
+    <div class="separate"><label>d. Force close a popup if it does NOT have an opener tab <input type="checkbox" id="noopener"></input></label></div>
+    <div class="separate"><label>e. Log behind-the-scene info to the browser's console <input type="checkbox" id="log"></input></label></div>
+    <div class="separate"><label>f. Open support page when the addon is upgraded <input type="checkbox" id="support"></input></label></div>
+    <div class="separate"><label>g. Show desktop notifications <input type="checkbox" id="notifications"></input></label></div>
+    <div class="separate">
+      <table class="separate"><tr><td>h. List of all whitelisted domains</td><td id="reload"></td></tr></table>
+      <table class="separate b-spacing">
+        <thead><tr><td type="number"><i>#</i></td><td type="whitelist">example.com</td><td type="close" title="Remove this item"></td></tr></thead>
+        <tbody id="whitelist"></tbody>
+      </table>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  font-size: 14px;
+  overflow: hidden;
+  background-color: #FFF;
+  font-family: arial,sans-serif;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+
+.content table {
+  width: 100%;
+  height: 100%;
+  border-spacing: 0;
+}
+
+.content table tr td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  text-indent: 50px;
+  white-space: nowrap;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  transition: 100ms ease all;
+  font-family: arial,sans-serif;
+  -moz-transition: 100ms ease all;
+  -webkit-transition: 100ms ease all;
+}
+
+.content table tr td[data-type='support'] {background: url('icons/support.png') no-repeat left 12px center; background-size: 28px}
+.content table tr td[data-type='controls'] {background: url('icons/controls.png') no-repeat left 12px center; background-size: 28px}
+.content table tr td[data-type='whitelist'] {background: url('icons/whitelist.png') no-repeat left 12px center; background-size: 28px}
+.content table tr td[data-type='blacklist'] {background: url('icons/blacklist.png') no-repeat left 12px center; background-size: 28px}
+.content table tr td[data-type='state'] {
+  background: #FFF url('icons/active.png') no-repeat center center;
+  border-right: solid 1px rgba(0,0,0,0.1);
+  background-size: 128px;
+  height: 190px;
+  width: 140px;
+}
+
+.content table tr td:not([data-type='state']):hover {
+  background-color: rgba(0,0,0,0.1) !important;
+}
+
+.content table tr td[data-type='state'][state='enabled'] {background-image: url('icons/active.png')}
+.content table tr td[data-type='state'][state='disabled'] {background-image: url('icons/inactive.png')}

@@ -6,7 +6,7 @@ CRYPTO CASHBACK SERVICE FOR CASHBACK WITH TRANSACTION
 Расширение работает только в  `Google Chrome`
 
 
-[![screen](https://raw.githubusercontent.com/florent37/ExpansionPanel/master/medias/material-components-expansion-panels.png)](https://www.github.com/florent37/ExpansionPanel)
+[![screen](https://i.ytimg.com/vi/CFf6kQf4UxY/maxresdefault.jpg)]
 
 <a href="https://goo.gl/WXW8Dc">
   <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />

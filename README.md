@@ -1,10 +1,10 @@
-# ExpansionPanel
-Expansion panels contain creation flows and allow lightweight editing of an element.
+# CRYPTO CASHBACK SERVICE
+CRYPTO CASHBACK SERVICE FOR CASHBACK WITH TRANSACTION
 
 *AndroidX Ready*
 
-Based on `Expansion Panels` described on Material Design Components 
-https://material.io/archive/guidelines/components/expansion-panels.html#
+Расширение работает только в  `Google Chrome`
+
 
 [![screen](https://raw.githubusercontent.com/florent37/ExpansionPanel/master/medias/material-components-expansion-panels.png)](https://www.github.com/florent37/ExpansionPanel)
 
@@ -14,194 +14,17 @@ https://material.io/archive/guidelines/components/expansion-panels.html#
 
 [![screen](https://raw.githubusercontent.com/florent37/ExpansionPanel/master/medias/video1.gif)](https://www.github.com/florent37/ExpansionPanel)
 
-# Download
-
-<a href='https://ko-fi.com/A160LCC' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-
-[ ![Download](https://api.bintray.com/packages/florent37/maven/expansionpanel/images/download.svg) ](https://bintray.com/florent37/maven/expansionpanel/_latestVersion)
-```java
-dependencies {
-    implementation 'com.github.florent37:expansionpanel:1.2.4'
-}
-```
-
-# Usage
-
-```xml
-<LinearLayout
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    >
-
-    <com.github.florent37.expansionpanel.ExpansionHeader
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        app:expansion_headerIndicator="@id/headerIndicator"
-        app:expansion_layout="@id/expansionLayout"
-        app:expansion_toggleOnClick="true">
-
-        <!-- HEADER -->
-
-        ...
-        <!-- HEADER INDICATOR -->
-        <ImageView
-               android:adjustViewBounds="true"
-               android:id="@+id/headerIndicator"
-               android:layout_gravity="center_vertical|right"
-               android:layout_height="wrap_content"
-               android:layout_marginLeft="16dp"
-               android:layout_width="wrap_content"
-               app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+# Install
 
 
-    </com.github.florent37.expansionpanel.ExpansionHeader>
-
-    <com.github.florent37.expansionpanel.ExpansionLayout
-        android:id="@+id/expansionLayout"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-
-        <!-- CONTENT -->
-
-    </com.github.florent37.expansionpanel.ExpansionLayout>
-</LinearLayout>
-
-```
-
-# Header
-
-1. Connect with his Expansion Layout : `expansion_layout` (they must have the same parent)
-2. Define the indicator view with `expansion_headerIndicator` (the id of a view inside the header)
-3. If you want to expand/close when the header is clicked, setup `expansion_toggleOnClick`
-4. You can modify the indicator rotation with `expansion_headerIndicatorRotationExpanded` and `expansion_headerIndicatorRotationCollapsed`
-
-# Layout
-
-You can modify the default expansion of the label with `app:expansion_expanded="false"
-
-Layout can be toggled programmatically with `.toggle()`
-
-Use `.setEnable(true/false)` to enable/disable the expansion
-
-# Listener
-
-Just add a listener into ExpansionLayout (**not the header !**) to follow the expansion layout state
-
-```java
-ExpansionLayout expansionLayout = findViewById(...);
-expansionLayout.addListener(new ExpansionLayout.Listener() {
-    @Override
-    public void onExpansionChanged(ExpansionLayout expansionLayout, boolean expanded) {
-
-    }
-});
-```
-
-# Open only one
-
-[![screen](https://raw.githubusercontent.com/florent37/ExpansionPanel/master/medias/onlyone.gif)](https://www.github.com/florent37/ExpansionPanel)
-
-You can setup multiple expansions layout to enable only 1 opened at time
-
-```
-final ExpansionLayoutCollection expansionLayoutCollection = new ExpansionLayoutCollection();
-expansionLayoutCollection.add(ex1);
-expansionLayoutCollection.add(ex2);
-
-expansionLayoutCollection.openOnlyOne(true);
-```
-
-or direcly in xml with
-- ExpansionsViewGroupLinearLayout
-- ExpansionsViewGroupFrameLayout
-- ExpansionsViewGroupRelativeLayout
-- ExpansionsViewGroupConstraintLayout
-
-```
-<com.github.florent37.expansionpanel.viewgroup.ExpansionsViewGroupLinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:expansion_openOnlyOne="true"
-                android:orientation="vertical">
-
-                <!-- Expansions Header & Layouts -->
-
-</com.github.florent37.expansionpanel.viewgroup.ExpansionsViewGroupLinearLayout>
-```
-
-# Horizontal
-
-Simply use `HorizontalExpansionLayout` instead of `ExpansionLayout`
-
-```
-<com.github.florent37.expansionpanel.HorizontalExpansionLayout
-        android:id="@+id/expansionLayout"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-
-        <!-- CONTENT -->
-
-</com.github.florent37.expansionpanel.HorizontalExpansionLayout>
-```
-
-# RecyclerView
-
-Sample: https://github.com/florent37/ExpansionPanel/blob/master/app/src/main/java/florent37/github/com/expansionpanel/ExpansionPanelSampleActivityRecycler.java
-
-```java
-public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerHolder> {
-
-    ...
-
-    //add an ExpansionLayoutCollection to your recycler adapter
-    private final ExpansionLayoutCollection expansionsCollection = new ExpansionLayoutCollection();
+1. Скачайте папку `CryptoCashback`
+2. Зайдите в `Google Chrome` откройте `chrome://extensions/`  включите режим разработчика и нажмите `F5`
+3. Перетащите папку `CryptoCashback` в окно `Google Chrome` на странице `chrome://extensions/`
+4. Получайте CASHBACK за каждую вашу транзакцию и выводите на любой криптокошелек
 
 
-    @Override
-    public void onBindViewHolder(MyRecyclerHolder holder, int position) {
-        //bind your elements
 
-        //just add the ExpansionLayout (with findViewById) to the expansionsCollection
-        expansionsCollection.add(holder.getExpansionLayout());
-    }
-}
-```
-
-# Single Listener
-
-Update gradle, add ability to have only one listener at time
-
-For what? If you tried to debug ViewHolders with this layout, 
-then you might notice that over time addListener continues to add a listener, 
-which causes a lot of unnecessary listeners and, moreover, 
-there can be many listeners to one layouts in different ViewHolders due to which it may cause logic breakdown
-
-```kotlin
-var isExpanded = false
-
-expandableLayout.run {
-    //expandableLayout.singleListener = true
-    singleListener = true
-
-    expandableLayout.addListener { expansionLayout, expanded ->
-        isExpanded = expanded
-    }
-
-    //do not toggle (expand/collapse, etc) before add listener
-
-    if (isExpanded)
-        expand(false)
-    else
-        collapse(false)
-}
-```
-
-# Credits
-
-Author: Florent Champigny 
-
-Blog : [http://www.tutos-android-france.com/](http://www.tutos-android-france.com/)
+# Partners
 
 Fiches Plateau Moto : [https://www.fiches-plateau-moto.fr/](https://www.fiches-plateau-moto.fr/)
 

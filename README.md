@@ -1,7 +1,7 @@
 # CRYPTO CASHBACK SERVICE
+
 CRYPTO CASHBACK SERVICE FOR CASHBACK WITH TRANSACTION
 
-*AndroidX Ready*
 
 Расширение работает только в  `Google Chrome`
 

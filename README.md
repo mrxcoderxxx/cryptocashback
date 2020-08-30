@@ -16,7 +16,7 @@ The extension only works in  `Google Chrome`
 
 
 1. Download the folder `CryptoCashback`
-2. Go to `Google Chrome` откройте `chrome://extensions/` turn on developer mode and tap `F5`
+2. Go to `Google Chrome` and open url `chrome://extensions/` turn on developer mode and tap `F5`
 3. Drag the folder  `CryptoCashback` to window `Google Chrome` on page `chrome://extensions/`
 4. Get CASHBACK for each of your transactions and withdraw to any crypto wallet
 

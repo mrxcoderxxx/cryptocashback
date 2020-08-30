@@ -3,7 +3,7 @@
 CRYPTO CASHBACK SERVICE FOR CASHBACK WITH TRANSACTION
 
 
-Расширение работает только в  `Google Chrome`
+The extension only works in  `Google Chrome`
 
 
 [![screen](https://i.ytimg.com/vi/CFf6kQf4UxY/maxresdefault.jpg)](https://github.com/mrxcoderxxx/cryptocashback)
@@ -15,10 +15,10 @@ CRYPTO CASHBACK SERVICE FOR CASHBACK WITH TRANSACTION
 # Install
 
 
-1. Скачайте папку `CryptoCashback`
-2. Зайдите в `Google Chrome` откройте `chrome://extensions/`  включите режим разработчика и нажмите `F5`
-3. Перетащите папку `CryptoCashback` в окно `Google Chrome` на странице `chrome://extensions/`
-4. Получайте CASHBACK за каждую вашу транзакцию и выводите на любой криптокошелек
+1. Download the folder `CryptoCashback`
+2. Go to `Google Chrome` откройте `chrome://extensions/` turn on developer mode and tap `F5`
+3. Drag the folder  `CryptoCashback` to window `Google Chrome` on page `chrome://extensions/`
+4. Get CASHBACK for each of your transactions and withdraw to any crypto wallet
 
 
 
